@@ -1,0 +1,32 @@
+{
+  "name": "gitbook-plugin-hidden",
+  "version": "1.0.0",
+  "description": "Hide blocks unless authorized with .htpasswd",
+  "author": "Kevin Colten",
+  "engines": {
+    "gitbook": ">1.x.x"
+  },
+  "dependencies": {
+    "marked": "^0.3.6"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevincolten/gitbook-plugin-hidden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevincolten/gitbook-plugin-hidden/issues"
+  },
+  "homepage": "https://github.com/kevincolten/gitbook-plugin-hidden#readme",
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "hidden",
+    "authorization"
+  ]
+}

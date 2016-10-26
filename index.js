@@ -10,7 +10,7 @@ module.exports = {
   blocks: {
     hidden: {
       process: function(block) {
-        return '<?php if (in_array($_SERVER["REMOTE_USER"], ["' + this.config.get('pluginsConfig')['hidden']['usernames'].join('", "') + '"])) { ?>' + marked(block.body) + '<?php } ?>';
+        return '<?php if (in_array("' + $_SERVER["REMOTE_USER"] + '", ["' + this.config.get('pluginsConfig')['hidden']['usernames'].join('", "') + '"])) { ?>' + marked(block.body) + '<?php } ?>';
       }
     }
   }

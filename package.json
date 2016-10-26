@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-hidden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hide blocks unless authorized with .htpasswd",
   "author": "Kevin Colten",
   "engines": {

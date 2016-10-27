@@ -44,11 +44,11 @@ You can set the usernames using the plugins configuration in the `book.json`:
 }
 ```
 
-`usernames`: is an array of authorized users
+`usernames`: is an array of authorized users (default: [])
 
 `path`: is the path to your generated html GitBook (default: `_book`)
 
-`env`: `NODE_ENV` value you want this plugin to be fully executed in. Useful for local development as this plugin breaks functionality of `gitbook serve`
+`env`: `NODE_ENV` value you want this plugin to be fully executed in. Useful for local development as this plugin breaks functionality of `gitbook serve` (default: `production`)
 
 Now in your markdown, you can have hidden blocks:
 

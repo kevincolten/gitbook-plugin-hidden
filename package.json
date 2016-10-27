@@ -1,13 +1,14 @@
 {
   "name": "gitbook-plugin-hidden",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Hide blocks unless authorized with .htpasswd",
   "author": "Kevin Colten",
   "engines": {
     "gitbook": ">1.x.x"
   },
   "dependencies": {
-    "marked": "^0.3.6"
+    "marked": "^0.3.6",
+    "recursive-readdir-synchronous": "0.0.3"
   },
   "main": "index.js",
   "devDependencies": {},
@@ -27,6 +28,7 @@
     "gitbook",
     "plugin",
     "hidden",
-    "authorization"
+    "authorization",
+    "php"
   ]
 }

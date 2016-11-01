@@ -1,3 +1,5 @@
+![NPM version][npm-image]][npm-url] [![NPM DM][npm-dm-image]][npm-url]
+
 Hide content based on basic authorization
 ==============
 

@@ -8,9 +8,9 @@ module.exports = {
     hidden: {
       process: function(block) {
         if (process.env.NODE_ENV === (this.config.get('pluginsConfig')['hidden']['env'] || 'production')) {
-          return '<?php if (in_array($_SERVER["REMOTE_USER"], ["' + (this.config.get('pluginsConfig')['hidden']['usernames'] || []).join('", "') + '"])) { ?>' + marked(block.body) + '<?php } ?>';
+          return '<?php if (in_array($_SERVER["REMOTE_USER"], ["' + (this.config.get('pluginsConfig')['hidden']['usernames'] || []).join('", "') + '"])) { ?><div class="hidden-style">' + marked(block.body) + '</div><?php } ?>';
         } else {
-          return '<div><em>HIDDEN</em><br>' + marked(block.body) + '<br><em>HIDDEN</em></div>';
+          return '<div class="hidden-style"><em>HIDDEN</em><br>' + marked(block.body) + '<br><em>HIDDEN</em></div>';
         }
       }
     }
